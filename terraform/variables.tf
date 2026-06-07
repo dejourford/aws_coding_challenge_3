@@ -5,7 +5,7 @@ variable "region" {
 
 variable "project_name" {
   type = string
-  default = "aws_tech_challenge_3"
+  default = "aws-tech-challenge-3"
 }
 
 variable "environment" {
