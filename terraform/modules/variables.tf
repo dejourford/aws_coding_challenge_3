@@ -32,11 +32,6 @@ variable "security_group_ids" {
   type        = list(string)
 }
 
-variable "key_name" {
-  description = "Key pair name for SSH access"
-  type        = string
-}
-
 variable "user_data" {
   description = "User data script to run on launch"
   type        = string
@@ -59,4 +54,9 @@ variable "iam_instance_profile" {
   description = "IAM instance profile name"
   type        = string
   default     = ""
+}
+
+variable "key_name" {
+  type = string
+  default = "1PU"
 }
